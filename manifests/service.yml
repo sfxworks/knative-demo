@@ -9,5 +9,8 @@ spec:
       revisionTemplate:
         spec:
           container:
-            image: docker.io/quantomworks/knative-demo:v1
+            image: docker.io/quantomworks/knative-demo:v2
             name: ""
+            env:
+            - name: KEY
+              value: "NEW VALUE!"

@@ -1,7 +1,7 @@
 apiVersion: build.knative.dev/v1alpha1
 kind: Build
 metadata:
-  name: kaniko-build-1
+  name: kaniko-build-v2
 spec:
   nodeSelector:
     type: vps
@@ -14,4 +14,4 @@ spec:
     name: kaniko
     arguments:
     - name: IMAGE
-      value: docker.io/quantomworks/knative-demo:v1
+      value: docker.io/quantomworks/knative-demo:v2
