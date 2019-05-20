@@ -4,10 +4,10 @@ metadata:
  name: helloworld-nodejs
  namespace: default
 spec:
- template:
-   spec:
-     containers:
-     - image: docker.io/quantomworks/knative-demo
-       env:
-         - name: TARGET
-           value: "Node.js Sample v1"
+  runLatest:
+    configuration:
+      revisionTemplate:
+        spec:
+          container:
+            image: docker.io/quantomworks/knative-demo:v1
+            name: ""
